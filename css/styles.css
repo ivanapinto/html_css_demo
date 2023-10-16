@@ -1,1 +1,106 @@
+body{
+    background-color: #edf5e4;
+    font-family: 'Markazi Text', serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+      
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  
+  /*image withing the header
+  By default, img has an inline display
+  Set the left and right margins to "auto" to center the img within the header element.*/
+  
+  header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5rem; 
+    height: auto;
+  }
+  
+  /*Lay out the navigation menu horizontally.
+  Remove the bullet point for each element 
+  */
+  
+  nav ul {
+    list-style: none;
+    /*Remove the bullet point for each element 
+  */
+  text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  /* Setting display: inline-block makes the LI element behave like inline elements, but they retain some characteristics of block-level elements. */
+  
+  nav li { 
+    display: inline-block;
+    margin: 0 1rem;
+  
+  }
 
+  
+  /*Any direct children of <section> will become flex containers, and you can use flex properties to control their layout.*/
+  
+  section{
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /*The flex property is shorthand for flex-grow, flex-shrink, and flex-basis.
+  Flex: 1 is typically used to distribute available space evenly among all the <article> elements. They will evenly share the available horizontal space..*/
+  
+  article{
+    flex: 1;
+    padding: 1rem;
+  }
+
+  /* Styling for the event announcement banner */
+.promo-banner.event {
+    background-color: #027d73;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 3rem; /* Add rounded corners with a 10px radius */
+  }
+
+/* Style the "Learn More" link */
+.promo-banner.event a {
+    color: #ffedcc; /* A light color that contrasts well with the green background */
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Change link color on hover for better visibility */
+.promo-banner.event a:hover {
+    color: #ffe873; /* A slightly darker color on hover for better visibility */
+}
+
+article> img {
+  
+  width: 15rem; 
+  height: auto;
+}
+
+  footer{
+    display: flex;
+  }
+  footer div {
+    flex: 1;
+  }
+
+ #footer-logo {
+
+    width: 2rem; 
+    height: auto;
+  }
