@@ -1,0 +1,145 @@
+body{
+    background-color: #edf5e4;
+    font-family: 'Markazi Text', serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+      
+  }
+  h1{
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+  }
+  h2{
+    font-size: 2rem;
+  }
+  
+  /*image withing the header
+  By default, img has an inline display
+  Set the left and right margins to "auto" to center the img within the header element.*/
+  
+  header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5rem; 
+    height: auto;
+  }
+  
+  nav {
+    background-color: #027d73;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+  }
+  /*Lay out the navigation menu horizontally.
+  Remove the bullet point for each element 
+  */
+  
+  nav ul {
+    list-style: none;
+    /*Remove the bullet point for each element 
+  */
+  text-align: center;
+    font-size: 1.75rem;
+    margin: 2rem 0;
+    padding-inline-start: 0rem;
+  }
+  
+  /* Setting display: inline-block makes the LI element behave like inline elements, but they retain some characteristics of block-level elements. */
+  
+  nav ul li { 
+    display: inline-block;
+    margin: 0.25rem;
+  
+  }
+
+  nav ul a{
+    color: #EDEFEE;
+    text-decoration: none;
+  }
+
+  nav ul a:active{
+    text-decoration: underline;
+  }
+
+  nav ul a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
+  }
+  
+  /*Any direct children of <section> will become flex containers, and you can use flex properties to control their layout.*/
+  
+  section{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /*The flex property is shorthand for flex-grow, flex-shrink, and flex-basis.
+  Flex: 1 is typically used to distribute available space evenly among all the <article> elements. They will evenly share the available horizontal space..*/
+  
+  article{
+    flex: 1;
+    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+
+
+  /* Styling for the event announcement banner */
+.promo-banner.event {
+    background-color: #027d73;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 3rem; /* Add rounded corners with a 10px radius */
+  }
+
+/* Style the "Learn More" link */
+.promo-banner.event a {
+    color: #ffedcc; /* A light color that contrasts well with the green background */
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Change link color on hover for better visibility */
+.promo-banner.event a:hover {
+    color: #ffe873; /* A slightly darker color on hover for better visibility */
+}
+
+article img {
+  max-width: 100%;
+ 
+}
+
+  footer{
+    display: flex;
+    margin: 1rem;
+    gap: 2rem 1rem;}
+
+
+   
+  footer p {
+    text-align: right;
+    border-top: #333333;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+
+ #footer-logo {
+
+    width: 2rem; 
+    height: auto;
+  }
